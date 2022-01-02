@@ -22,9 +22,9 @@ if company != "":
     st.header(f"{company_names[selected_company_index]}")
     
     tickerData = yf.Ticker(tickerSymbol)
-#get the historical prices for this ticker
+    #get the historical prices for this ticker
     tickerDf = tickerData.history(period='1d', start='2000-1-31', end='2021-12-31')
-# Open High Low Close Volume Dividends Stock Splits
+    # Open High Low Close Volume Dividends Stock Splits
     st.write(""" Closing Price""")
     st.line_chart(tickerDf.Close)
     st.write("""Volume Price""")
