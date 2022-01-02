@@ -1,7 +1,6 @@
 
 import yfinance as yf
 import streamlit as st
-import numpy as np
 
 st.write("""
 # Simple Stock Price App
