@@ -9,7 +9,7 @@ st.write("""Shown are the stock **closing price** and **volume** of Largest comp
 # https://towardsdatascience.com/how-to-get-stock-data-using-python-c0de1df17e75
 #define the ticker symbol
 company_code = ["","AAPL","MSFT","GOOG","GOOGL","AMZN","TSLA","FB","NVDA","TSM","UNH","V","JPM"]
-company_names = [""," Inc", "Microsoft Corp", "Alphabet Inc (Google) Class C", "Alphabet Inc (Google) Class A", "Amazon.com, Inc", "Tesla, Inc", 
+company_names = ["","Apple Inc", "Microsoft Corp", "Alphabet Inc (Google) Class C", "Alphabet Inc (Google) Class A", "Amazon.com, Inc", "Tesla, Inc", 
                  "Meta Platforms (Facebook)", "NVIDIA Corporation", "TAIWAN SEMICONDUCTOR MANUFACTURING COMPAN", 
                  "UNITEDHEALTH GROUP INCORPORATED", "Visa Inc", "JP MORGAN CHASE & CO."]
 
