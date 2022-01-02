@@ -1,5 +1,3 @@
-
-import yfinance as yf
 import streamlit as st
 import yfinance as yf
 
