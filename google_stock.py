@@ -10,19 +10,7 @@ Shown are the stock **closing price** and **volume** of Largest companies.
 
 # https://towardsdatascience.com/how-to-get-stock-data-using-python-c0de1df17e75
 #define the ticker symbol
-company_names = ["Select company",
-                "AAPL",
-                "MSFT",
-                "GOOGL",
-                "GOOG",
-                "AMZN",
-                "TSLA",
-                "FB",
-                "NVDA",
-                 "TSM",
-                 "UNH",
-                 "V",
-                 "JPM"]
+company_names = ["Select company","AAPL","MSFT","GOOGL","GOOG","AMZN","TSLA","FB","NVDA","TSM","UNH","V","JPM"]
 company = st.selectbox("",company_names)
 tickerSymbol = company
 #get data on this ticker
