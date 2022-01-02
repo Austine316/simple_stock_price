@@ -16,7 +16,7 @@ tickerSymbol = company
 if company != "":
     tickerData = yf.Ticker(tickerSymbol)
 #get the historical prices for this ticker
-    tickerDf = tickerData.history(period='1d', start='2010-5-31', end='2020-5-31')
+    tickerDf = tickerData.history(period='1d', start='2000-1-31', end='2021-12-31')
 # Open High Low Close Volume Dividends Stock Splits
     st.write("""## Closing Price""")
     st.line_chart(tickerDf.Close)
