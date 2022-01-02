@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 alabaster==0.7.12
 altair==4.2.0
 anaconda-client==1.7.2
@@ -268,3 +269,7 @@ yapf==0.28.0
 yfinance==0.1.68
 zict==1.0.0
 zipp==2.2.0
+=======
+streamlit==1.3.1
+yfinance==0.1.68
+>>>>>>> e615a4a22dd32bc974660caffd2608c808a356f6
