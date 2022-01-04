@@ -5,7 +5,7 @@ import pandas as pd
 st.title(
 "Simple Stock Price App")
 
-st.write("""Shown are the stock **closing price** and **volume** of Largest companies.""")
+st.write("""Shown are the stock **closing price** and **volume** of companies.""")
 
 @st.cache
 def load_data():
@@ -36,3 +36,8 @@ if company != "":
     st.line_chart(tickerDf.Close)
     st.write("""Volume Price""")
     st.line_chart(tickerDf.Volume)
+
+st.markdown("""Credit:
+[Data Professor](http://dataprofessor.org/)
+""")
+
