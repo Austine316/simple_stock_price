@@ -1,17 +1,24 @@
 import streamlit as st
 import yfinance as yf
+import pandas as pd
 
 st.title(
 "Simple Stock Price App")
 
 st.write("""Shown are the stock **closing price** and **volume** of Largest companies.""")
 
-# https://towardsdatascience.com/how-to-get-stock-data-using-python-c0de1df17e75
+@st.cache
+def load_data():
+    url = 'https://stockanalysis.com/stocks/'
+    html = pd.read_html(url, header = 0)
+    df = html[0]
+    return df
+
+df = load_data()
+
 #define the ticker symbol
-company_code = ["","AAPL","MSFT","GOOG","GOOGL","AMZN","TSLA","FB","NVDA","TSM","UNH","V","JPM"]
-company_names = ["","Apple Inc", "Microsoft Corp", "Alphabet Inc (Google) Class C", "Alphabet Inc (Google) Class A", "Amazon.com, Inc", "Tesla, Inc", 
-                 "Meta Platforms (Facebook)", "NVIDIA Corporation", "TAIWAN SEMICONDUCTOR MANUFACTURING COMPAN", 
-                 "UNITEDHEALTH GROUP INCORPORATED", "Visa Inc", "JP MORGAN CHASE & CO."]
+company_code = list(df['Symbol'])
+company_names = list(df["Company Name"])
 
 company = st.selectbox("Select company", company_code)
 selected_company_index = company_code.index(company)
